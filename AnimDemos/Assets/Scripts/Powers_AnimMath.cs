@@ -26,6 +26,11 @@ public static class Powers_AnimMath
         return (max - min) * p + min;
     }
 
+    public static Vector3 Lerp(Vector3 min, Vector3 max, float p)
+    {
+        return (max - min) * p + min;
+    }
+
     public static float Slide(float current, float target, float percentLeftAfter1Second)
     {
         float p = 1 - Mathf.Pow(percentLeftAfter1Second, Time.deltaTime);
